@@ -83,70 +83,10 @@ p {
 }
   
 section {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-
-
-/* FULL IMAGES */
-
-.full-image {
-    width: 100%;
-    height: 100vh;
-
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://images.unsplash.com/photo-1679957631642-94f406206544?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxheWElMjBkZSUyMHIlQzMlQURvJTIwZGUlMjBqYW5laXJvfGVufDB8fDB8fHww');
-
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-
-.full-image2 {
-    width: 100%;
-    height: 100vh;
-
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://lp-cms-production.imgix.net/2022-10/Brazil-iStock-875693756-RFC.jpeg?fit=crop&w=3840&auto=format&q=75');
-
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-.full-image3 {
-    width: 100%;
-    height: 100vh;
-
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://mundografico.emol.cl/2016/07/18/37577_4430_47764510.jpg');
-
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-.full-image4 {
-    width: 100%;
-    height: 100vh;
-
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://images.unsplash.com/photo-1507125524815-d9d6dccda1dc?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-
-.full-image5 {
-    width: 100%;
-    height: 100vh;
-
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2024/03/22100906/rio.jpg');
-
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
 
 
 /* MENÚ  */
@@ -467,8 +407,8 @@ footer {
     align-items: center;
     min-height: 10vh;
     padding: 1rem;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 footer > div {
