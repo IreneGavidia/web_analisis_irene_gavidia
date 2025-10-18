@@ -1,0 +1,989 @@
+/* TIPOGRAFÍAS  */
+
+.league-spartan-uniquifier {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+  
+  
+/* VARIABLES */
+  
+:root {
+    --principal-color: white;
+    --other-color:#ABA7E3;
+    --secondary-color: #4525A2;
+    --hover-color:#ff5ae4;
+    --terciary-color: black;
+    --transparent-color: #4425a286;
+    --all-font: "League Spartan";
+    --font :"Instrument Serif"
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Days One";
+    transition: all 0.3s;
+    scroll-behavior: smooth;
+}
+
+
+
+/* TÍTULOS  */
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--secondary-color);
+    text-align: left;
+    margin-left: 140px;
+    
+}
+
+h3 {
+    font-family: var(--all-font);
+    color: var(--principal-color);
+    font-size: 1.3em;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--all-font);
+    font-weight: 600;
+    font-size: 3em;
+    color: var(--transparent-color);
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+p {
+    line-height: 1.5;
+    font-family: var(--all-font);
+}
+  
+section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+
+/* FULL IMAGES */
+
+.full-image {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://images.unsplash.com/photo-1679957631642-94f406206544?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxheWElMjBkZSUyMHIlQzMlQURvJTIwZGUlMjBqYW5laXJvfGVufDB8fDB8fHww');
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.full-image2 {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://lp-cms-production.imgix.net/2022-10/Brazil-iStock-875693756-RFC.jpeg?fit=crop&w=3840&auto=format&q=75');
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.full-image3 {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://mundografico.emol.cl/2016/07/18/37577_4430_47764510.jpg');
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.full-image4 {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://images.unsplash.com/photo-1507125524815-d9d6dccda1dc?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.full-image5 {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%), url('https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2024/03/22100906/rio.jpg');
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+/* MENÚ  */
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding-left: 115px;
+    padding-right: 115px;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    color: var(--principal-color);
+}
+
+nav ul li a {
+    font-family: var(--font);
+}
+
+nav a i {
+    font-size: 1.8em;
+    height: auto; 
+    color: var(--principal-color);
+}
+
+nav a i:hover {
+    color: var(--hover-color);
+}
+
+.menu {
+    display: flex;
+    gap: 4rem;
+}
+
+.menulink {
+    list-style: none;
+    margin: 0;
+    
+}
+
+.menulink a {
+    color: var(--principal-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative; 
+    padding-bottom: 6px; 
+}
+
+.menulink a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--hover-color);
+    transition: width 0.3s ease;
+}
+
+.menulink a:hover::after {
+    width: 95px;
+}
+
+.menulink a:hover {
+    color: var(--hover-color);
+}
+
+.burger {
+    cursor: pointer;
+    font-size: 1.98em;
+    display: none;
+}
+
+.burger :hover {
+    color: var(--hover-color);
+}
+
+
+
+/* SLIDESHOW HEADER */
+
+.slideshow-head {
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+    max-width: none;
+    overflow: hidden; 
+}
+
+.slides2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide2 {
+    min-width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+}
+
+.slide2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*texto superpuesto */
+
+.text-overlay {
+    position: absolute;
+    bottom: 40px; 
+    left: 0px;
+}
+
+.text-overlay h2 {
+    color: var(--hover-color);
+    font-size: 5em;
+    /* text-shadow:2px 2px 4px var(--transparent-color); */
+}
+
+.text-overlay h3 {
+    color: var(--hover-color);
+    font-weight: 370;
+    font-size: 2.5em;
+    margin-left: 140px;
+    /* text-shadow:2px 2px 4px var(--transparent-color); */
+}
+
+
+
+/* NATURALEZA */
+
+#naturaleza {
+    margin-top: 7px;
+}
+
+#naturaleza > p {
+    font-family: var(--all-font);
+    font-weight: 350;
+    font-size: 1.4em;
+    color: var(--terciary-color);
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;  
+}
+
+
+
+/* VISITAR */
+
+#visitar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: -18%;
+}
+
+#visitar > p {
+    font-family: var(--all-font);
+    font-weight: 350;
+    font-size: 1.4em;
+    color: var(--terciary-color);
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;  
+}
+
+
+
+/*botón visitar */
+
+.botonvisitar {
+    display:flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 20%;
+}
+
+.botonvisitar  input {
+    align-items: center;
+    height: 2.7em;
+    width: 11em;
+    font-size: 1.6em;
+    font-family: var(--all-font);
+    font-weight: 600;
+    color:var(--secondary-color);
+    background-color:var(--hover-color);
+    border:none;
+}
+
+.botonvisitar  input:hover {
+    color:var(--principal-color);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0.6px 1.6px rgba(0, 0, 0, 0.25), 0px 1.4px 3.6px rgba(0, 0, 0, 0.19),
+    0px 2.4px 6.3px rgba(0, 0, 0, 0.981), 0px 3.8px 10px rgba(0, 0, 0, 0.143),
+    0px 5.8px 15.5px rgba(0, 0, 0, 0.125), 0px 9px 24.1px rgba(0, 0, 0, 0.107),
+    0px 15px 40px rgba(0, 0, 0, 0.087), 0px 30px 80px rgba(0, 0, 0, 0.06);
+}
+
+
+
+/* CULTURA  */
+
+#cultura2 {
+    margin-top: 7px;
+}
+
+#cultura2 > p {
+    font-family: var(--all-font);
+    font-weight: 350;
+    font-size: 1.4em;
+    color: var(--terciary-color);
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;  
+}
+
+
+
+/* SLIDES  */
+
+#SLIDES { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 600px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 90%;  
+    max-width: 800px; 
+    overflow: hidden;
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s;
+}
+
+.slide img {
+    width: 100%;  
+    height: 100%;   
+    object-fit: cover; 
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+
+/* GALERÍA */
+
+#galería2 .gallery .cont {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#galería2 .gallery {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+
+#galería2 img {
+    width: 31em;
+	height: 25em;
+	object-fit: cover;
+    display: flex;
+    margin-bottom: 6%;
+    justify-content: space-around;
+}
+
+#galería2 .gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 12px;
+}
+
+#galería2 .gallery ul li {
+    height: 35vh;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#galería2 .gallery ul li img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    background-color:var(--terciary-color);
+}
+
+#galería2 .gallery ul li .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-color: var(--transparent-color);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    transform:scale(0);
+    transition:0.25s ease-in-out;
+}
+
+#galería2 .gallery ul li:hover .overlay {
+    transform:scale(1);
+    opacity:1;
+}
+
+#galería2 .gallery ul li .overlay span {
+    color: var(--principal-color);
+    font-size: 2.2em;
+    font-weight: 500;
+    font-family: var(--all-font);
+}
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    background-color:var(--secondary-color);
+    gap: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 1rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+footer > div {
+    flex: 33.333%;
+}
+
+footer h3 {
+    color: var(--principal-color);
+    text-align: center; 
+    margin-bottom: 2em;
+    font-family: var(--font);
+    font-weight: 550;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+footer div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer div ul li a {
+    color: var(--principal-color);;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-family: var(--all-font);
+    font-weight: 200;
+    font-style: normal;
+}
+
+footer div ul li a:hover {
+    color: var(--hover-color);
+    font-weight:500;
+}
+
+
+footer .contact-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer .contact-footer p {
+    color: var(--principal-color);;
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-family: var(--all-font);
+    font-weight: 200;
+    font-style: normal;
+}
+
+footer .contact-footer div {
+    display: flex;
+    justify-content: space-around; 
+}
+
+footer .contact-footer div i {
+    color: var(--principal-color);;
+    font-size: 2em;
+    padding-top: 6%;  
+}
+
+footer .contact-footer div i:hover {
+    color:var(--hover-color);
+    transition: 0.33s;
+    transform: scale(1.1);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* PÁGINA DE QUÉ VISITAR  */
+
+/* playas */
+
+#playas {
+    margin-top: 7px;
+}
+
+#playas > p {
+    font-family: var(--all-font);
+    font-weight: 350;
+    font-size: 1.4em;
+    color: var(--terciary-color);
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;  
+}
+
+
+/* gastronomía */
+
+#gastronomia {
+    margin-top: 7px;
+}
+
+#gastronomia > p {
+    font-family: var(--all-font);
+    font-weight: 350;
+    font-size: 1.4em;
+    color: var(--terciary-color);
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;  
+}
+
+
+
+/* monumentos */
+
+#monumentos {
+    margin-top: 7px;
+}
+
+#monumentos > p {
+    font-family: var(--all-font);
+    font-weight: 350;
+    font-size: 1.4em;
+    color: var(--terciary-color);
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;  
+}
+
+
+
+/* TARJETAS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+.card {
+    margin-top: 10%; 
+    margin-left: 140px;
+    width: 330px;
+    background-color: var(--secondary-color);
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+.card :hover {
+    transform: translateY(-5px);
+}
+  
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+  
+.card-content {
+    padding: 20px;  
+}
+  
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--hover-color);
+    text-align: center;
+    font-family: var(--all-font); 
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--principal-color);
+    line-height: 1.6;
+    font-family: var(--all-font);
+}
+
+.card-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+
+    h2 {
+        font-size: 2.7em;
+    } 
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1.9em;
+    }
+    
+    nav {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .text-overlay h2 {
+        color: var(--hover-color);
+        font-size: 3em;
+        margin-left: 90px;
+    }
+    
+    .text-overlay h3 {
+        color: var(--hover-color);
+        font-weight: 350;
+        font-size: 1.5em;
+        margin-left: 90px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        margin: 0;
+        background: var(--secondary-color);
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: calc(100% - 70px);
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        z-index: 1;
+        transition: all 0.33s;
+    }
+
+    .menulink {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .menu-show {
+        right: 0;
+    }
+
+    #naturaleza > h3 {
+        font-size: 1em;
+    }
+
+    .card { 
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #galería2 .gallery ul li .overlay span {
+        font-size: 2em;
+    }
+
+    #galería2 .gallery ul li:hover .overlay {
+        display: none;
+    }
+
+    #galería2 .gallery ul li .overlay span {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    h2 {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.7em;
+    }
+ 
+    h3 {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+    
+    nav {
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    .text-overlay h2 {
+        color: var(--hover-color);
+        font-size: 2.5em;
+        margin-left: 40px;
+    }
+    
+    .text-overlay h3 {
+        color: var(--hover-color);
+        font-weight: 350;
+        font-size: 1.5em;
+        margin-left: 40px;
+    }
+
+    #naturaleza > h3 {
+        font-family: "Poppins";
+        font-weight: 350;
+        font-size: 0.9em;
+        color: var(--terciary-color);
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5%;  
+    }
+    
+    #naturaleza > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #visitar > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #cultura2 > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #naturaleza > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #playas > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #monumentos > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #gastronomia > p {
+        font-size: 1.2em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .botoncomprar input {
+        align-items: center;
+        height: 2.4em;
+        width: 9em;
+        font-size: 1.4em;
+        font-family: var(--all-font);
+        font-weight: 600;
+    }
+
+    .chart-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #galería2 .gallery ul li img {
+        max-width: 100vw;
+    }
+
+    #galería2 .gallery ul li:hover .overlay {
+        display: none;
+    }
+
+    #galería2 .gallery ul li .overlay span {
+        display: none;
+    }
+
+    #cultura2 > p {
+        margin-bottom: -120px;
+    }
+
+    #SLIDES { 
+        padding-bottom: 300px;
+    }
+    
+    .card {
+        margin-top: 10%; 
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 300px;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 1em;
+    }
+   
+    label, input {
+        font-size: 1em;
+    }
+
+}
