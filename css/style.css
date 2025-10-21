@@ -48,6 +48,7 @@ body {
 }
 
 
+
 /* TÍTULOS  */
 
 h2 {
@@ -128,7 +129,6 @@ nav a i:hover {
 .menulink {
     list-style: none;
     margin: 0;
-    
 }
 
 .menulink a {
@@ -204,12 +204,9 @@ nav a i:hover {
 
 /*texto título*/
 
-
-
 .text-title h2 {
     color: var(--secondary-color);
     font-size: 4.5em;
-    /* text-shadow:2px 2px 4px var(--transparent-color); */
 }
 
 .text-title h3 {
@@ -217,8 +214,6 @@ nav a i:hover {
     font-weight: 370;
     font-size: 2em;
     text-align: center;
-    
-    /* text-shadow:2px 2px 4px var(--transparent-color); */
 }
 
 
@@ -232,6 +227,7 @@ nav a i:hover {
   max-width: 1100px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 200px;
 }
 
 .analysis-card:hover {
@@ -273,7 +269,6 @@ nav a i:hover {
 .iframe-fallback {
   background: var(--other-color);
   border-radius: 1.5rem;
-  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); */
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -392,10 +387,6 @@ figcaption {
 
 
 
-
-
-
-
 /* FOOTER */
 
 footer {
@@ -412,7 +403,7 @@ footer {
 }
 
 footer > div {
-    flex: 33.333%;
+    flex: 50%;
 }
 
 footer h3 {
@@ -489,126 +480,6 @@ footer a {
 footer a:hover {
     font-weight: bold;
 }
-
-
-
-
-
-
-
-/* PÁGINA DE QUÉ VISITAR  */
-
-/* playas */
-
-#playas {
-    margin-top: 7px;
-}
-
-#playas > p {
-    font-family: var(--all-font);
-    font-weight: 350;
-    font-size: 1.4em;
-    color: var(--terciary-color);
-    text-align: left;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5%;  
-}
-
-
-/* gastronomía */
-
-#gastronomia {
-    margin-top: 7px;
-}
-
-#gastronomia > p {
-    font-family: var(--all-font);
-    font-weight: 350;
-    font-size: 1.4em;
-    color: var(--terciary-color);
-    text-align: left;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5%;  
-}
-
-
-
-/* monumentos */
-
-#monumentos {
-    margin-top: 7px;
-}
-
-#monumentos > p {
-    font-family: var(--all-font);
-    font-weight: 350;
-    font-size: 1.4em;
-    color: var(--terciary-color);
-    text-align: left;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5%;  
-}
-
-
-
-/* TARJETAS */
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 200px;
-}
-
-.card {
-    margin-top: 10%; 
-    margin-left: 140px;
-    width: 330px;
-    background-color: var(--secondary-color);
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-  
-.card :hover {
-    transform: translateY(-5px);
-}
-  
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-  
-.card-content {
-    padding: 20px;  
-}
-  
-.card-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--hover-color);
-    text-align: center;
-    font-family: var(--all-font); 
-}
-
-.card-text {
-    font-size: 1rem;
-    color: var(--principal-color);
-    line-height: 1.6;
-    font-family: var(--all-font);
-}
-
-.card-link {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-
-
-
 
 
 
