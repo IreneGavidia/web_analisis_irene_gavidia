@@ -21,7 +21,7 @@
 
   
   
-/* VARIABLES */
+/* VARIABLES Y GENERALES */
   
 :root {
     --principal-color: white;
@@ -38,7 +38,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Days One";
     transition: all 0.3s;
     scroll-behavior: smooth;
 }
@@ -47,9 +46,19 @@ body {
     background-color: var(--other-color);
 }
 
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+p {
+    line-height: 1.5;
+    font-family: var(--all-font);
+}
 
 
-/* TÍTULOS  */
+
+/* TÍTULOS h2, h3.  */
 
 h2 {
     display: flex;
@@ -65,32 +74,13 @@ h3 {
     font-family: var(--all-font);
     color: var(--principal-color);
     font-size: 1.3em;
-}
-
-h4 {
     display: flex;
     flex-direction: column;
-    font-family: var(--all-font);
-    font-weight: 600;
-    font-size: 3em;
-    color: var(--transparent-color);
-    padding-bottom: 20px;
-    padding-top: 50px;
-}
-
-p {
-    line-height: 1.5;
-    font-family: var(--all-font);
 }
   
-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 
 
-
-/* MENÚ  */
+/* MENÚ (NAV) */
 
 nav {
     position: fixed;
@@ -185,7 +175,6 @@ nav a i:hover {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-    
 }
 
 .slide2 {
@@ -206,19 +195,22 @@ nav a i:hover {
 
 .text-title h2 {
     color: var(--secondary-color);
-    font-size: 4.5em;
+    font-size: 4.2em;
 }
 
 .text-title h3 {
     color: var(--secondary-color);
     font-weight: 370;
-    font-size: 2em;
+    font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 
 
-/* === CARD GENERAL PARA CADA SITIO === */
+/* CARDS GENERALES PARA CADA SITIO */
+
 .analysis-card {
   background: #ffffff;
   border-radius: 1.5rem;
@@ -235,7 +227,7 @@ nav a i:hover {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-/* === ENCABEZADO === */
+/* encabezado */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -263,9 +255,7 @@ nav a i:hover {
   border-radius: 999px;
 }
 
-
-
-/* === CONTENEDOR DE LA IMAGEN DE VISTA PREVIA === */
+/* Contenedor imagen vista previa */
 .iframe-fallback {
   background: var(--other-color);
   border-radius: 1.5rem;
@@ -313,7 +303,7 @@ nav a i:hover {
   background-color: var(--hover-color);
 }
 
-/* === TEXTO DE ANÁLISIS === */
+/* texto de análisis*/
 .analysis-text {
   columns: 1;
   column-gap: 2rem;
@@ -335,7 +325,7 @@ nav a i:hover {
     font-family: var(--all-font);
 }
 
-/* === GALERÍA DE CAPTURAS === */
+/* galería de capturas */
 .screenshots {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -364,7 +354,7 @@ figcaption {
   font-family: var(--all-font);
 }
 
-/* === CONCLUSIÓN === */
+/* conlcusión */
 .conclusion {
   background: var(--other-color);
   border-left: 6px solid #ff5ae4;
@@ -398,8 +388,8 @@ footer {
     align-items: center;
     min-height: 10vh;
     padding: 1rem;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 9%;
+    padding-bottom: 9%;
 }
 
 footer > div {
@@ -486,7 +476,6 @@ footer a:hover {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1080px) {
-
     h2 {
         font-size: 2.7em;
     } 
@@ -543,33 +532,11 @@ footer a:hover {
         right: 0;
     }
 
-    #naturaleza > h3 {
-        font-size: 1em;
-    }
-
-    .card { 
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-
-    #galería2 .gallery ul li .overlay span {
-        font-size: 2em;
-    }
-
-    #galería2 .gallery ul li:hover .overlay {
-        display: none;
-    }
-
-    #galería2 .gallery ul li .overlay span {
-        display: none;
-    }
-
 }
 
 
 
 @media screen and (max-width: 500px) {
-
     section {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -603,92 +570,6 @@ footer a:hover {
         font-weight: 350;
         font-size: 1.5em;
         margin-left: 40px;
-    }
-
-    #naturaleza > h3 {
-        font-family: "Poppins";
-        font-weight: 350;
-        font-size: 0.9em;
-        color: var(--terciary-color);
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 5%;  
-    }
-    
-    #naturaleza > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #visitar > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #cultura2 > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #naturaleza > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #playas > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #monumentos > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #gastronomia > p {
-        font-size: 1.2em;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .botoncomprar input {
-        align-items: center;
-        height: 2.4em;
-        width: 9em;
-        font-size: 1.4em;
-        font-family: var(--all-font);
-        font-weight: 600;
-    }
-
-    .chart-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #galería2 .gallery ul li img {
-        max-width: 100vw;
-    }
-
-    #galería2 .gallery ul li:hover .overlay {
-        display: none;
-    }
-
-    #galería2 .gallery ul li .overlay span {
-        display: none;
-    }
-
-    #cultura2 > p {
-        margin-bottom: -120px;
-    }
-
-    #SLIDES { 
-        padding-bottom: 300px;
     }
     
     .card {
